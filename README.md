@@ -7,6 +7,7 @@ http://mirnazim.org/writings/vim-plugins-i-use/
 
 Mon fichier .vimrc
 =====
+```
 call pathogen#infect()
 
 syntax on
@@ -37,11 +38,11 @@ augroup BgHighlight
 augroup END
 
 au BufRead,BufNewFile *.scss set filetype=scss
-
+```
 
 Mon fichier .bash_profile
 =====
-
+```
 ~/.bash_profile
 Show the branch name in the terminal
 
@@ -66,4 +67,5 @@ fi
 -----
 apres executer cette commande pour reload bash:
 . ~/.bash_profile
+```
 
