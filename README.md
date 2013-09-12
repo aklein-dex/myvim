@@ -5,7 +5,35 @@ J'utilise VIM et voici mon repository avec les submodules.
 Je me suis aide de ce site:
 http://mirnazim.org/writings/vim-plugins-i-use/
 
+```
+sudo apt-get install vim-nox
+sudo apt-get install vim-rails
+
+cd ~/.vim
+$ git clone git://github.com/tpope/vim-pathogen.git pathogen
+$ mv pathogen/autoload ~/.vim/autoload
+
+$ cd .vim
+$ git init
+$ git add .
+$ git commit -m "Initial commit"
+
+$ sudo aptitude install ruby ruby-dev
+$ git submodule add git://git.wincent.com/command-t.git bundle/command-t
+$ git submodule init && git submodule update
+$ cd ~/.vim/bundle/command-t/ruby/command-t/
+$ ruby extconf.rb
+$ make
+
+$ git submodule add git://github.com/Raimondi/delimitMate.git bundle/delmitmate
+$ git submodule init && git submodule update
+
+$ git submodule add  git://github.com/altercation/vim-colors-solarized.git bundle/solarized
+$ git submodule init && git submodule update
+
+```
 Mon fichier .vimrc
+
 =====
 ```
 call pathogen#infect()
