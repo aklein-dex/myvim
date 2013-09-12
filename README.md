@@ -41,7 +41,7 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 let mapleader = ","
-nnoremap <silent> <Leader>t :CommandT<CR>
+nnoremap <silent> <Leader>o :CommandT<CR>
 nnoremap <silent> <Leader>O <Esc>:CommandTFlush<CR>
 let g:CommandTMaxHeight=6
 colorscheme morning
@@ -50,6 +50,9 @@ set tabstop=2 shiftwidth=2 softtabstop=2 " a tab is two spaces (or set this to 4
 set expandtab " use spaces, not tabs (optional)
 set guifont=Menlo
 set mouse=a
+set tabpagemax=15
+set showtabline=2
+nnoremap <silent> <Leader>t :tabnew<CR>
 
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>
