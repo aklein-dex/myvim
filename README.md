@@ -40,12 +40,9 @@ augroup END
 au BufRead,BufNewFile *.scss set filetype=scss
 ```
 
-Mon fichier .bash_profile
+Mon fichier .bash_profile ou .bashrc
 =====
 ```
-~/.bash_profile
-Show the branch name in the terminal
-
 [[ -s "/Users/alex/.rvm/scripts/rvm" ]] && source "/Users/alex/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 # extract current git branch
@@ -61,11 +58,11 @@ function parse_git_branch
 if [ $(tput colors) == "256" ]; then
   PS1="\[\033[38;5;125m\]\w\[\033[0;34m\]\$(parse_git_branch) \[\033[0;0m\]\$ "
 else
-  PS1="\[\033[0;35m\]\w\[\033[0;34m\]\$(parse_git_branch) \[\033[0;0m\]\$ "
+  PS1="\[\033[1;35m\]\w\[\033[1;34m\]\$(parse_git_branch) \[\033[0;0m\]\$ "
 fi
 
------
+```
 apres executer cette commande pour reload bash:
 . ~/.bash_profile
-```
+
 
