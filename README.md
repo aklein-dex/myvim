@@ -49,6 +49,7 @@ set number " to show the line number
 set tabstop=2 shiftwidth=2 softtabstop=2 " a tab is two spaces (or set this to 4)
 set expandtab " use spaces, not tabs (optional)
 set guifont=Menlo
+set mouse=a
 
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>
