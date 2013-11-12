@@ -4,6 +4,7 @@ My Vim
 J'utilise VIM et voici mon repository avec les submodules.
 Je me suis aide de ce site:
 http://mirnazim.org/writings/vim-plugins-i-use/
+Je suis content si ca aide quelqu'un d'autre.
 
 ```
 sudo apt-get install vim-nox
