@@ -98,4 +98,34 @@ fi
 apres executer cette commande pour reload bash:
 . ~/.bash_profile
 
+----------------
+==    2015    ==
+----------------
 
+# Install RMV and ruby
+rvm install ruby-1.9.3-p484
+rvm install ruby-1.9.3-dev
+rvm use ruby-1.9.3-p484
+
+# Need to install this vim to have Ruby support to be able to use comment-t
+sudo apt-get install vim-nox
+sudo apt-get build-essential
+
+# create folders:
+~/.vim
+~/.vim/bundle
+~/.vim/doc
+
+# Install pathogen
+git clone git://github.com/tpope/vim-pathogen.git ~/.vim/pathogen
+mv ~/.vim/pathogen/autoload ~/.vim/autoload
+
+# Install plugin
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+git clone git://github.com/Raimondi/delimitMate.git
+git clone git://git.wincent.com/command-t.git
+cd command-t/ruby/command-t/
+ruby extconf.rb
+make
+# You must compile Command-t using the same version of Ruby that your Vim is linked against!
